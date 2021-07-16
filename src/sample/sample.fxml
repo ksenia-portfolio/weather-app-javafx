@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<GridPane alignment="center" gridLinesVisible="true" hgap="10" prefHeight="722.0" prefWidth="512.0" vgap="10" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <AnchorPane prefHeight="717.0" prefWidth="577.0" style="-fx-background-color: #322f2f#322f2f;" GridPane.rowIndex="1">
+         <children>
+            <AnchorPane accessibleText="Weather Broadcast" layoutY="-9.0" prefHeight="115.0" prefWidth="577.0" style="-fx-background-color: black;">
+               <children>
+                  <Text fill="WHITE" layoutX="119.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" text="WEATHER BROADCAST" textAlignment="CENTER" wrappingWidth="338.58984375">
+                     <font>
+                        <Font name="Arial Black" size="26.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+            <TextField fx:id="city" alignment="CENTER" layoutX="153.0" layoutY="128.0" prefHeight="60.0" prefWidth="274.0" promptText="ENTER YOUR CITY" style="-fx-background-color: white; -fx-border-radius: 7px; -fx-border-color: grey; -fx-font-style: ;">
+               <font>
+                  <Font name="Arial Black" size="21.0" />
+               </font>
+            </TextField>
+            <Button fx:id="get_weather" layoutX="174.0" layoutY="210.0" mnemonicParsing="false" style="-fx-border-radius: 7px;" text="GET THE WEATHER">
+               <font>
+                  <Font name="Arial Black" size="19.0" />
+               </font>
+            </Button>
+            <Text fill="#b53333" layoutX="114.0" layoutY="328.0" strokeType="OUTSIDE" strokeWidth="0.0" text="INFORMATION ☂ ">
+               <font>
+                  <Font name="Arial Black" size="43.0" />
+               </font>
+            </Text>
+            <Text fx:id="temp" fill="WHITE" layoutX="44.0" layoutY="391.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Temperature:">
+               <font>
+                  <Font name="Arial Black" size="32.0" />
+               </font>
+            </Text>
+            <Text fx:id="feels_like" fill="WHITE" layoutX="44.0" layoutY="445.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Feels like:">
+               <font>
+                  <Font name="Arial Black" size="32.0" />
+               </font>
+            </Text>
+            <Text fx:id="temp_min" fill="WHITE" layoutX="44.0" layoutY="500.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Min:">
+               <font>
+                  <Font name="Arial Black" size="32.0" />
+               </font>
+            </Text>
+            <Text fx:id="temp_max" fill="WHITE" layoutX="44.0" layoutY="556.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Max:">
+               <font>
+                  <Font name="Arial Black" size="32.0" />
+               </font>
+            </Text>
+            <Text fx:id="pressure" fill="WHITE" layoutX="44.0" layoutY="611.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pressure:">
+               <font>
+                  <Font name="Arial Black" size="32.0" />
+               </font>
+            </Text>
+            <Text fx:id="humidity" fill="WHITE" layoutX="43.0" layoutY="666.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Humidity:">
+               <font>
+                  <Font name="Arial Black" size="32.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+   </children>
+</GridPane>
