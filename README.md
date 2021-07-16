@@ -7,3 +7,4 @@ This project was built with javaFX
 - Request weather data for that city if exists
 - Outputs temperatures, pressure and humidity parameters
 
+### Screenshot can be viewed in project folder -> images/Weather App.png
